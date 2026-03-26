@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Art Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="logo">◰</span>
+            <span>ASCII Generator</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Генератор артов</a></li>
+            <li><a href="gallery.html">Галлерея</a></li>
+            <li><a href="about.html">О приложении</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="generator-section">
+            <h1>Конвертирование изображение в ASCII</h1>
+            <p class="subtitle">Сделай из своего изображеия красивый ASCII арт</p>
+
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-content">
+                    <p>Перетащите элементы сюда</p>
+                    <p>или</p>
+                    <label>
+                        <span class="browse-link">загрузите файл</span>
+                        <input type="file" id="fileInput" accept="image/*" hidden>
+                    </label>
+                    <p class="upload-hint">Поддерживание форматов: JPG, PNG, GIF, WebP</p>
+                </div>
+            </div>
+
+            <div class="settings-panel">
+                <div class="setting-group">
+                    <label for="width">Размер</label>
+                    <input type="range" id="width" min="20" max="200" value="80">
+                    <span class="value-display" id="widthValue">80</span>
+                </div>
+
+                <div class="setting-group">
+                    <label for="contrast">Контрастность</label>
+                    <input type="range" id="contrast" min="0" max="200" value="100">
+                    <span class="value-display" id="contrastValue">100</span>
+                </div>
+            </div>
+
+            <div class="output-section">
+                <div class="output-header">
+                    <h2>Результат</h2>
+                    <div class="output-actions">
+                        <button class="btn btn-secondary" id="copyBtn" onclick="copyText()">Копировать текст</button>
+                        <button class="btn btn-secondary" id="downloadTxtBtn" onclick="download()">Скачать txt</button>
+                        <button class="btn btn-secondary" id="downloadPngBtn" onclick="downloadImage()">Скачать png</button>
+                    </div>
+                </div>
+                <pre class="ascii-output" id="asciiOutput">Ваше изображение появится здесь</pre>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Сделано<span class="heart">♥</span> энтузиастом из групы 32в</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

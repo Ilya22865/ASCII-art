@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - ASCII Art Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="logo">◰</span>
+            <span>ASCII Generator</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Генератор артов </a></li>
+            <li><a href="gallery.html">Галлерея</a></li>
+            <li><a href="about.html" class="active">О приложении</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="about-section">
+            <h1>О приложении</h1>
+            <p class="subtitle">Подробнее о программе</p>
+
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="card-icon">🎨</div>
+                    <h2>What is ASCII Art?</h2>
+                    <p>ASCII art is a graphic design technique that uses computers for creation from pictures and uses the 95 printable characters defined by the ASCII Standard to create images and graphics.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">⚡</div>
+                    <h2>How It Works</h2>
+                    <p>Our generator converts images to ASCII by analyzing pixel brightness and mapping each pixel to a corresponding character. Darker areas use denser characters, while lighter areas use sparser ones.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">🔧</div>
+                    <h2>Features</h2>
+                    <ul class="feature-list">
+                        <li>Multiple character sets to choose from</li>
+                        <li>Adjustable width and contrast</li>
+                        <li>Color inversion option</li>
+                        <li>Copy to clipboard functionality</li>
+                        <li>Download as text file</li>
+                        <li>Drag and drop upload</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">📖</div>
+                    <h2>Tips for Best Results</h2>
+                    <ul class="feature-list">
+                        <li>Use high contrast images for clearer results</li>
+                        <li>Smaller widths create more abstract art</li>
+                        <li>Higher widths preserve more detail</li>
+                        <li>Portrait images work best with smaller widths</li>
+                        <li>Experiment with different character sets</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tech-section">
+                <h2>Built With</h2>
+                <div class="tech-stack">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Canvas API</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Made with <span class="heart">♥</span> for ASCII enthusiasts</p>
+    </footer>
+</body>
+</html>
